@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="read.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ecbdca32e8.js" crossorigin="anonymous"></script>
+  <title>CCD</title>
+</head>
+
+<body>
+  <div class="Cups">
+    <img class="Cup" id="ans" src="card.png">
+  </div>
+  <div class="goback">
+    <img class="back" id="backbtn"src="back1.png">
+  </div>
+  <div class="popup center">
+    <div class="icon">
+      <i class="far fa-check-circle"></i>
+    </div>
+    <div class="title">Congrats!!!</div>
+    <div class="description">Here's the second:- " CLUE "</div>
+    <div class="next-btn">
+      <button id="next-popup-btn">Next</button>
+    </div>
+  </div>
+  <script>
+    document.getElementById("ans").addEventListener("click", function() {
+      document.getElementsByClassName("popup")[0].classList.add("active");
+    });
+
+    document.getElementById("next-popup-btn").addEventListener("click", function() {
+        location.href = "map.html";
+    });
+    document.getElementById("backbtn").addEventListener("click", function() {
+        location.href = "lib.html";
+    });
+  </script>
+</body>
+
+</html>
